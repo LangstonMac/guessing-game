@@ -1,6 +1,50 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Langston and the Guessing Game</title>
+  </head>
   <body>
-    <h1>GIT HUB Connection Made!</h1>
+    <script type="text/javascript">
+    var guest = prompt("And who might you be?");
+          alert("I see..." + guest);
+    var user = prompt("Welcome stranger. Do you think you know me?");
+        if (user == "yes" || user == "Yes") {
+          alert ("Oh how gutsy you are...lets play a game then.");
+        } else {
+          alert ("I see. Would you like to play a game anyway?");
+        }
+    var age = prompt("How old do you think I am?");
+        if (age == 25) {
+        alert("Spot on! Way to go. Two more questions for ya.");
+      }
+        else if (age > 25) {
+          alert("How dare you! I am not ancient!");
+        }
+        else {
+          alert("Too young for my blood.")
+        }
+    var city = prompt("Where do you think I am from?");
+        if (city == "Seattle" || city == "seattle") {
+          alert("Correct correct correct *golf clap*. Move on to question three!")
+        }
+        else {
+          alert("Close but no cigar amigo...");
+        }
+    var food = prompt("What is my favorite dish?");
+        if (food == "Cheese enchiladas" || food == "cheese enchiladas") {
+          alert("You got that one right too? You really DO know me.")
+        }
+        else {
+          alert("mmmmmmm not exactly")
+        }
+    </script>
+    <h1>Three Questions for YOU!</h1>
+    <p>Answers</p>
+      <ol>
+        <li>25 years old</li>
+        <li>Seattle, Washington</li>
+        <li>Cheese enchiladas!</li>
+    <p>You went through all three of those questions. How did you do?
+      Want to do better next time? Reload the page brave soldier!</p>
   </body>
 </html>
