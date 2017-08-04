@@ -7,34 +7,44 @@
     <script type="text/javascript">
     var guest = prompt("And who might you be?");
           alert("I see..." + guest);
+          console.log("Guest is")
     var user = prompt("Welcome stranger. Do you think you know me?");
         if (user == "yes" || user == "Yes") {
+          console.log("user answer was yes for the first question")
           alert ("Oh how gutsy you are...lets play a game then.");
         } else {
+          console.log("user answer was incorrect")
           alert ("I see. Would you like to play a game anyway?");
         }
     var age = prompt("How old do you think I am?");
         if (age == 25) {
+          console.log("user answer was 25")
         alert("Spot on! Way to go. Two more questions for ya.");
       }
         else if (age > 25) {
+          console.log("user answer was more than 25")
           alert("How dare you! I am not ancient!");
         }
         else {
+          console.log("user answer was less than 25")
           alert("Too young for my blood.")
         }
     var city = prompt("Where do you think I am from?");
         if (city == "Seattle" || city == "seattle") {
+          console.log("user answer was Seattle or seattle")
           alert("Correct correct correct *golf clap*. Move on to question three!")
         }
         else {
+          console.log("user answer was not Seattle or seattle")
           alert("Close but no cigar amigo...");
         }
     var food = prompt("What is my favorite dish?");
         if (food == "Cheese enchiladas" || food == "cheese enchiladas") {
+          console.log("user answer was Cheese enchiladas or cheese enchiladas")
           alert("You got that one right too? You really DO know me.")
         }
         else {
+          console.log("user answer was not cheese enchiladas at all")
           alert("mmmmmmm not exactly")
         }
     </script>
