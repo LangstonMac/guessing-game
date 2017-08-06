@@ -6,6 +6,8 @@
   <body>
     <script type="text/javascript" src="app.js"></script>
     <script type="text/javascript">
+    var correct = 0
+
     var guest = prompt("And who might you be?");
           alert("I see..." + guest);
           console.log("Guest is")
@@ -20,11 +22,12 @@
     var age = prompt("Am I 25 years old?");
         if (age == "yes" || age == "YES" || age == "y" || age == "Y") {
           console.log("correct")
+          correct = correct + 1
         alert("Spot on! Way to go. Two more questions for ya.");
       }
         else if (age == "no"|| age == "NO" || age == "n" || age == "N") {
           console.log("incorrect")
-          alert("Incorrect my friend!");
+          alert("Incorrect");
         }
         else {
           console.log("no response")
@@ -33,6 +36,7 @@
     var city = prompt("Was I born in Washington?");
         if (city == "yes" || city == "YES" || city == "Y" || city == "y") {
           console.log("correct")
+          correct = correct + 1
           alert("Correct correct correct *golf clap*. Move on to question three!")
         }
         else if (city == "no" || city == "NO" || city == "n" || city == "N") {
@@ -47,17 +51,45 @@
     var food = prompt("Is my favorite dish cheese enchiladas?");
         if (food == "yes" || food == "YES" || food == "Y" || food == "y") {
           console.log("correct")
-          alert("You got that one right too? You really DO know me.")
+          correct = correct + 1
+          alert("You got that one right? You really DO know me.")
         }
         else if (food == "no" || food == "NO" || food == "N" || food == "n")
         {
           console.log("incorrect")
-          alert("eh, it was 50/50.")
+          alert("Eh, it was 50/50.")
         }
         else {
           console.log("no response")
           alert("Don't give up!")
         }
+    var feet = prompt("How many feet do I have?");
+      if (feet == 2){
+        console.log("correct")
+        correct = correct + 1
+        alert("Phew, glad you got that one!")
+      }
+      else if (feet > 2){
+        console.log("incorrect")
+        alert("Ummmmm...incorrect")
+      }
+      else {
+        console.log("no response")
+        alert("Aww come on at least give this one a try!")
+      }
+    var favoriteNumber = prompt("Extra credit, can guess my favorite number!?")
+      while (favoriteNumber != 11){
+            if (favoriteNumber != 11) {
+              console.log("incorrect")
+              favoriteNumber = prompt("I'll go easy on ya. Try again!!")
+            }
+      }
+      if (favoriteNumber == 11) {
+        console.log("correct")
+        correct = correct + 1
+        alert("BINGO!!")
+      }
+        alert("You got " + correct + " correct out of 5! Thanks for trying, play again!?");
     </script>
     <h1>Three Questions for YOU!</h1>
     <p>Answers</p>
@@ -65,7 +97,9 @@
         <li>25 years old</li>
         <li>Seattle, Washington</li>
         <li>Cheese enchiladas!</li>
-    <p>You went through all three of those questions. How did you do?
+        <li>Yes, I have two feet</li>
+        <li>Favorite number is 11</li>
+    <p>You went through all five of those questions. How did you do?
       Want to do better next time? Reload the page brave soldier!</p>
   </body>
 </html>
