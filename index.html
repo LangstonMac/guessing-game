@@ -14,39 +14,49 @@
           console.log("user answer was yes for the first question")
           alert ("Oh how gutsy you are...lets play a game then.");
         } else {
-          console.log("user answer was incorrect")
+          console.log("user answer was no for the first question")
           alert ("I see. Would you like to play a game anyway?");
         }
-    var age = prompt("How old do you think I am?");
-        if (age == 25) {
-          console.log("user answer was 25")
+    var age = prompt("Am I 25 years old?");
+        if (age == "yes" || age == "YES" || age == "y" || age == "Y") {
+          console.log("correct")
         alert("Spot on! Way to go. Two more questions for ya.");
       }
-        else if (age > 25) {
-          console.log("user answer was more than 25")
-          alert("How dare you! I am not ancient!");
+        else if (age == "no"|| age == "NO" || age == "n" || age == "N") {
+          console.log("incorrect")
+          alert("Incorrect my friend!");
         }
         else {
-          console.log("user answer was less than 25")
-          alert("Too young for my blood.")
+          console.log("no response")
+          alert("No answer?")
         }
-    var city = prompt("Where do you think I am from?");
-        if (city == "Seattle" || city == "seattle") {
-          console.log("user answer was Seattle or seattle")
+    var city = prompt("Was I born in Washington?");
+        if (city == "yes" || city == "YES" || city == "Y" || city == "y") {
+          console.log("correct")
           alert("Correct correct correct *golf clap*. Move on to question three!")
         }
-        else {
-          console.log("user answer was not Seattle or seattle")
-          alert("Close but no cigar amigo...");
+        else if (city == "no" || city == "NO" || city == "n" || city == "N") {
+          console.log("incorrect")
+          alert("Incorrect, sorry!!")
         }
-    var food = prompt("What is my favorite dish?");
-        if (food == "Cheese enchiladas" || food == "cheese enchiladas") {
-          console.log("user answer was Cheese enchiladas or cheese enchiladas")
+        else {
+          console.log("no response")
+          alert("You don't want to give it a shot?")
+        }
+
+    var food = prompt("Is my favorite dish cheese enchiladas?");
+        if (food == "yes" || food == "YES" || food == "Y" || food == "y") {
+          console.log("correct")
           alert("You got that one right too? You really DO know me.")
         }
+        else if (food == "no" || food == "NO" || food == "N" || food == "n")
+        {
+          console.log("incorrect")
+          alert("eh, it was 50/50.")
+        }
         else {
-          console.log("user answer was not cheese enchiladas at all")
-          alert("mmmmmmm not exactly")
+          console.log("no response")
+          alert("Don't give up!")
         }
     </script>
     <h1>Three Questions for YOU!</h1>
