@@ -1,1 +1,1 @@
-alert("Hello, from class 03!");
+//alert("Hello, from class 03!");
