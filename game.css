@@ -1,14 +1,14 @@
 body{
-  background-color:teal;
+  background-color: #C8C8C8;
 }
 
-p {
+p{
   font-family:Georgia;
   font-size:20px;
   font-weight: bold;
 }
 
-h1 {
+h1{
   text-align:center;
   color:purple;
   font-family:Helvetica;
@@ -18,7 +18,7 @@ h1 {
 }
 h2{
   text-align: center;
-  color:grey;
+  color:purple;
   font-family:cursive;
   font-style: italic;
 }
@@ -27,7 +27,7 @@ li{
   font-size: 20px;
 }
 .purple {
-    color: rgb(#B62084);
+    color: #B62084;
 }
 .highlight{
     background-color:grey;

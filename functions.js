@@ -1,79 +1,32 @@
-//function names for questions 1-5
 var message = ""
-function guessingGame(){
-questionOne();
-questionTwo();
-questionThree();
-questionFour();
-questionFive();
+var score = 0
+//for yes or no questions
+function askQuestion(question, answer, correctMessage, wrongMessage, location){
+  var response = prompt(question);
+  if(response.toLowerCase() == answer.toLowerCase()){
+    message = correctMessage
+    score +=1
+  } else {
+    message = wrongMessage
+  }
+  updatePage(location);
 }
-function userName(){
-  var user = prompt("Hello, what is your name?");
-  updatePage("titleName");
-  updatePage("userName");
+//start of the guessing game
+function guessingGame(){
+  askQuestion("Am I 25 years old?", "Yes", "<span class='correct'>You hit the nail on the head!</span>",
+  "<span class='wrong'>Close but not close enough</span>", "questionOne");
+  askQuestion("Was I born on the East Coast?", "No",
+  "<span class='correct'>That is correct my friend I was born on the West Coast in Seattle!</span>",
+  "<span class='wrong'>Sorry, I was definitely born on the best coast...the WEST COAST!</span>", "questionTwo");
+  askQuestion("Did I have cheese enchiladas on EVERY single birthday?", "Yes",
+  "<span class='correct'>Yes I did, correct! I loved every minute of it as well.</span>",
+  "<span class='wrong'>Incorrect! I had them all the time!</span>", "questionThree");
+  askQuestion("Am I a human with four feet?", "No", "<span class='correct'>Phew you got that one right.</span>",
+  "<span class='wrong'>Aww come on that one was a gimme!</span>", "questionFour");
+  askQuestion("Is my favorite number the same as the day of my birthday?", "Yes",
+  "<span class='correct'>You betcha'! My favorite number is 11.</span>",
+  "<span class='wrong'>Nope. 11 is my favorite number and it is such a cool one!", "questionFive");
 }
 function updatePage(elementId) {
   document.getElementById(elementId).innerHTML = message;
-}
-var correct = 0
-var incorrect = 0
-//question one (age)
-function questionOne() {
-      var realAge = 25
-      var guessAge = prompt("How old do you think I am?")
-      if (guessAge == realAge) {
-        message = "<span class='correct'>1.You got it right!! Nice job! I am 25!/span>";
-    } else if (guessAge < realAge ) {
-        message = "<span class='wrong'>1.Jeez do I look like a baby?</span>";
-      }
-      else {
-          message = "<span class='wrong'>1.Ahhhh thats ice cold!</span>";
-        }
-      updatePage("questionOne");
-    }
-//question two (hometown)
-function questionTwo() {
-    var city = prompt("Where am I from?")
-    if (city == "Seattle" || city == "seattle") {
-    message = "<span class='correct'>2.That I am, that I am. I was born and raised in South Seattle.</span>";
-}   else {
-  message = "<span class ='wrong'>2.NO SOUP FOR YOU!</span>"
-}
-    updatePage("questionTwo");
-}
-//question three (favorite food)
-function questionThree() {
-      var food = prompt("What do you think is my favorite food?");
-      if (food == "Cheese Enchiladas" || food == "cheese enchiladas"){
-    message = "<span class='correct'>3.Those are the best aren't they?</span>";
-    } else {
-    message = "<span class='wrong'>3.Its okay, that was a tough one anyway.</span>";
-    }
-        updatePage("questionThree");
-    }
-//question four (feet)
-function questionFour() {
-  var feetAmount = 2
-  var feet = prompt("How many feet do I have?")
-    if (feet == 2) {
-    message = "<span class='correct'>4.Correct! I do have two feet. I can breathe a sigh of relief you got that one right.</span>"
-  } else if (feet > 2) {
-    message = "<span class='wrong'>4.It was worth a shot I guess?</span>"
-  } else {
-    message = "<span class='wrong'>4.I'm not THAT kind of animal!</span>"
-  }
-    updatePage("questionFour");
-}
-//question five (favoriteNumber)
-function questionFive() {
-    var favoriteNumber = 11
-    var number = prompt("What is my favorite number? Here's a hint its between 1 and 15.")
-    if (number == 11) {
-      message = "<span class='correct'>5.WOW, that is an amazing guess!!</span>"
-    } else if (number > 11) {
-      message = "<span class='wrong'>5.Ahhhh that was a tough one.</span>"
-    } else {
-      message = "<span class='wrong'>5.Too low Joe (I know your name isn't Joe it just rhymes).</span>"
-    }
-    updatePage("questionFive");
 }

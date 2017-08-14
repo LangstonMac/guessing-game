@@ -2,111 +2,32 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="game.css">
-    <title id="userName">Welcome, Stranger</title>
+    <title>Langston and the Guessing Game</title>
   </head>
   <body>
     <script type="text/javascript" src="functions.js"></script>
-    <!-- <script type="text/javascript">
-    var correct = 0
-    var greeting = "Hello World"
-    var user = prompt("Welcome stranger. Do you think you know me?");
-        if (user == "yes" || user == "Yes") {
-          console.log("user answer was yes for the first question")
-          alert ("Oh how gutsy you are...lets play a game then.");
-        } else {
-          console.log("user answer was no for the first question")
-          alert ("I see. Would you like to play a game anyway?");
-        }
-    var age = prompt("Am I 25 years old?");
-        if (age == "yes" || age == "YES" || age == "y" || age == "Y") {
-          console.log("correct")
-          correct = correct + 1
-        alert("Spot on! Way to go. Two more questions for ya.");
-      }
-        else if (age == "no"|| age == "NO" || age == "n" || age == "N") {
-          console.log("incorrect")
-          alert("Incorrect");
-        }
-        else {
-          console.log("no response")
-          alert("No answer?")
-        }
-    var city = prompt("Was I born in Washington?");
-        if (city == "yes" || city == "YES" || city == "Y" || city == "y") {
-          console.log("correct")
-          correct = correct + 1
-          alert("Correct correct correct *golf clap*. Move on to question three!")
-        }
-        else if (city == "no" || city == "NO" || city == "n" || city == "N") {
-          console.log("incorrect")
-          alert("Incorrect, sorry!!")
-        }
-        else {
-          console.log("no response")
-          alert("You don't want to give it a shot?")
-        }
-
-    var food = prompt("Is my favorite dish cheese enchiladas?");
-        if (food == "yes" || food == "YES" || food == "Y" || food == "y") {
-          console.log("correct")
-          correct = correct + 1
-          alert("You got that one right? You really DO know me.")
-        }
-        else if (food == "no" || food == "NO" || food == "N" || food == "n")
-        {
-          console.log("incorrect")
-          alert("Eh, it was 50/50.")
-        }
-        else {
-          console.log("no response")
-          alert("Don't give up!")
-        }
-    var feet = prompt("How many feet do I have?");
-      if (feet == 2){
-        console.log("correct")
-        correct = correct + 1
-        alert("Phew, glad you got that one!")
-      }
-      else if (feet > 2){
-        console.log("incorrect")
-        alert("Ummmmm...incorrect")
-      }
-      else {
-        console.log("no response")
-        alert("Aww come on at least give this one a try!")
-      }
-    var favoriteNumber = prompt("Extra credit, can guess my favorite number!?")
-      while (favoriteNumber != 11){
-            if (favoriteNumber != 11) {
-
-              console.log("incorrect")
-              favoriteNumber = prompt("I'll go easy on ya. Try again!!")
-            }
-      }
-      if (favoriteNumber == 11) {
-        console.log("correct")
-        correct = correct + 1
-        alert("BINGO!!")
-      }
-        alert("You got " + correct + " correct out of 5! Thanks for trying, play again!?");
-    </script> -->
     <h1>Five Questions for YOU!</h1>
     <h2>by Langston McClarron</h2>
-    <p>Here is a list of the answers to the 5 questions from the quiz.</p>
+    <h3>The 5 questions from the quiz(directly below)</h3>
       <ol>
         <li>How old is Langston?</li>
         <li>Where was Langston born?</li>
         <li>What is Langston's favorite dish?</li>
         <li>How many feet does Langston have? (this one should be easy...I hope)</li>
         <li>What is Langston's favorite number? Bonus ROUND.</li>
-    <p>You went through all five of those questions. How did you do?
-      Want to do better next time? Reload the page brave soldier! Here you learned a lot more about me as a person
-      but if you ever want to know anymore you can always just ask. <span class="highlight">Coloring in paragraphs is fun so I took my time
-      with this part!</span></p>
+    <p>A little bit about myself, my name is Langston McClarron. I was named after Langston Hughes the famous poet
+    from the Harlem Renaissance and to this day am attempting to honor that name. Here you have visited a page where there
+    are a few questions about myself. Some of them are self-explanatory while a few others can be more tricky.</p>
+    <br>
+    <p>I will let you know I was born in Seattle, Washington in 1991 on the south side and was raised there. Random fact on
+      every birthday I had my family and I would head to the SAME mexican restaurant because I always wanted the same dish; cheese enchiladas.
+      That with an ice cold mix of strawberry lemonade would make my day every time. Being born on August 11th the number somewhat
+      gravitated to me and i've always been a fan of it. Well, enough about me, I've given you more than enough hints how about
+      you try out the game!?</p>
 
-    <p>Let's play a guessing game?(you should click it)</p>
+    <p>Now that you've read through would you like to try the game? (click below)</p>
+
   <input type="button" value="Let's play a game!" onclick="guessingGame()">
-  <div id="titleName"></div>
   <div id="questionOne"></div>
   <div id="questionTwo"></div>
   <div id="questionThree"></div>
